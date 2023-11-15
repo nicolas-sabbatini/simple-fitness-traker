@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fitness Challenge App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <sl-dialog id="config" label="En que día estas?" class="dialog-overview">
+      <sl-input id="dia-config" type="number" placeholder="Día"></sl-input>
+      <sl-icon-button
+        style="font-size: 24px"
+        id="config-close"
+        name="check2-square"
+        label="Close"
+        slot="footer"
+      ></sl-icon-button>
+    </sl-dialog>
+    <h1 class="page-title">Fitness Challenge App</h1>
+    <sl-card class="card-header center-text">
+      <p id="info"></p>
+    </sl-card>
+    <div class="card-container">
+      <sl-card class="card-header">
+        <div slot="header">Flecciones</div>
+        <div class="card-content">
+          <p id="flecciones"></p>
+          <sl-button id="flecciones-btn" variant="success"> +1 </sl-button>
+        </div>
+      </sl-card>
+      <sl-card class="card-header">
+        <div slot="header">Dominadas</div>
+        <div class="card-content">
+          <p id="abdominales"></p>
+          <sl-button id="abdominales-btn" variant="success"> +1 </sl-button>
+        </div>
+      </sl-card>
+      <sl-card class="card-header">
+        <div slot="header">Sentadillas</div>
+        <div class="card-content">
+          <p id="sentadillas"></p>
+          <sl-button id="sentadillas-btn" variant="success"> +1 </sl-button>
+        </div>
+      </sl-card>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
